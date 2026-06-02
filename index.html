@@ -141,7 +141,7 @@
                     <p>Prior to that, I received my bachelor's degree in Computer Science & Technology from <a href="https://www.csu.edu.cn/" rel="external nofollow noopener" target="_blank">Central South University</a> in 2023.</p>
                     <p>My research interests involve Graphics, 3D Vision and Computer Vision.</p>
                     <p>During my bachelor's program, I focus on the <a href="https://icpc.global/" rel="external nofollow noopener" target="_blank">International Collegiate Programming Contest (ICPC)</a>. (Gold Medal at The 46th ICPC Asia Regional Contest, etc.)</p>
-                    <p>During my master's program, I focus on the study of rendering/inverse rendering/3D reconstruction with NeRF/3DGS. (SIGGRAPH, ACM TOG, SIGGRAPH Asia, ECCV, IEEE TVCG, IEEE VR, etc.)</p>
+                    <p>During my master's program, I focus on the study of rendering/inverse rendering/3D reconstruction with NeRF/3DGS. (SIGGRAPH, SIGGRAPH Asia, ECCV, IEEE VR, ACM TOG, IEEE TVCG, etc.)</p>
                     <!-- <p
                         style="color: #e74c3c; font-weight: bold; font-size: 1.1em; background-color: #fff3cd; padding: 10px; border-left: 4px solid #f39c12; margin: 15px 0;">
                         🎓 I am actively seeking PhD opportunities for Fall 2026! 
@@ -157,7 +157,7 @@
                         <table class="table table-sm table-borderless">
                             <tr>
                                 <th scope="row" style="width: 20%">March, 2026</th>
-                                <td> 1 paper is conditionally accepted to <a href="https://s2026.siggraph.org/"><span
+                                <td> 1 paper is accepted to <a href="https://s2026.conference-schedule.org/presentation/?id=papers_868&sess=sess135"><span
                                             style="color: #d2c5b2; font-weight: bold;">ACM SIGGRAPH 2026</span></a>. <img class="emoji"
                                         title=":tada:" alt=":tada:"
                                         src="https://github.githubassets.com/images/icons/emoji/tada.png" height="20"
@@ -249,6 +249,76 @@
                         <li>
                             <div class="row">
 
+                               <div class="col-sm-3 preview">
+                                    <figure>
+                                        <picture>
+                                            <p style="height:150%"><br></p>
+                                            <!-- <abbr class="badge"><a href="https://cvpr.thecvf.com/Conferences/2024" rel="external nofollow noopener" target="_blank">CVPR</a></abbr>  -->
+                                            <img src="/assets/img/gausmoke.jpg" data-zoomable
+                                                class="img-fluid z-depth-1 rounded" width="100%" height="auto"
+                                                alt="GSReuse"
+                                                onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+                                        </picture>
+                                    </figure>
+                                </div>
+                                <div id="gs_reuse" class="col-sm-9">
+                                    <div class="title"><strong>GauSmoke: Hybrid Physics-Optical Gaussian Splatting for Sparse Smoke Reconstruction</strong></div>
+                                    <div class="author">
+                                        Wenran Zhang, 
+                                        <a href="https://orcid.org/0009-0005-7211-3279" rel="external nofollow noopener"
+                                            target="_blank"> Yuxiang Cai</a>,
+                                        <strong>Letian Huang</strong>,
+                                        <a href="https://orcid.org/0009-0004-8637-4384"
+                                            rel="external nofollow noopener" target="_blank">Dongwei Ye</a>,
+                                        <a href="https://scholar.google.com.hk/citations?user=Sx4PQpQAAAAJ&hl=en"
+                                            rel="external nofollow noopener" target="_blank">Jie Guo</a>,
+                                        <a href="http://ren-bo.net/"
+                                            rel="external nofollow noopener" target="_blank">Bo Ren</a>,
+                                    </div>
+                                    <!-- <div class="periodical"> -->
+                                    <!-- https://shamerkill.github.io/article/6b4cacf8.html -->
+                                    <!-- <img class="emoji" title=":trophy:" alt=":trophy:" src="https://github.githubassets.com/images/icons/emoji/trophy.png" height="15" width="15"> Test.
+                                            </div> -->
+                                    <div class="periodical"> <em>Proceedings of ACM SIGGRAPH 2026</em></div>
+                                    <div class="periodical"> </div>
+                                    <div class="links">
+                                        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                                        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+                                        <a href="http://ren-bo.net/papers/zwr_sig2026.pdf" rel="external nofollow noopener" target="_blank" class="btn btn-sm z-depth-0" role="button">Author Version</a> 
+                                        <a href="http://ren-bo.net/Videos/zwr_sig2026.mp4" rel="external nofollow noopener" target="_blank" class="btn btn-sm z-depth-0" role="button">Video</a> 
+                                        <a href='https://doi.org/10.1145/3799902.3811148'> <img
+                                                src='https://img.shields.io/badge/DOI-10.1145%2F3799902.3811148-blue'></a>
+                                    </div>
+                                    <div class="bibtex hidden">
+                                        <figure class="highlight">
+                                            <pre>
+                                                    <code class="language-bibtex" data-lang="bibtex">
+Coming soon...
+</code></pre>
+                                        </figure>
+                                    </div>
+                                    <div class="abstract hidden">
+                                        <p>
+Reconstructing dynamic fluids from sparse-view videos is a severely underconstrained problem due to complex volumetric visibility and turbulent,
+topology-changing motion. Current dynamic deformation-based 3D Gaussian Splatting (3DGS) methods use heuristic image-space warps, which often
+overfit limited observations via non-physical primitive scaling or drifting,
+producing floaters and geometric distortions. To address these challenges,
+we propose a hybrid, physics-aware fluid representation that injects physical
+constraints directly into the 3DGS pipeline. We develop a Beer–Lambert
+volumetric model mapping Gaussian primitives to a continuous, physicallygrounded density field, bridging optical observations with fundamental
+physical laws. A physically-guided optimization evolves primitives under
+a global, volume-preserving velocity field, avoiding arbitrary per-particle
+deformations and effectively preserving volume while recovering fine-scale turbulent details. This unified formulation tightly couples fluid dynamics
+with differentiable rendering, enabling high-quality, joint predictions of
+velocity and density. Experiments on synthetic and real smoke datasets
+demonstrate that our approach surpasses state-of-the-art methods in both
+visual fidelity and physical consistency, achieving stable 3D reconstructions
+even from sparse views.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+<!--                                  -->
                                 <div class="col-sm-3 preview">
                                     <figure>
                                         <picture>
@@ -972,7 +1042,7 @@ methods, GSReuse delivers better image quality with much lower latency, facilita
     <script type="text/javascript">window.MathJax = { tex: { tags: "ams" } };</script>
     <script defer type="text/javascript" id="MathJax-script"
         src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
     <script
         type="text/javascript">function progressBarSetup() { "max" in document.createElement("progress") ? (initializeProgressElement(), $(document).on("scroll", function () { progressBar.attr({ value: getCurrentScrollPosition() }) }), $(window).on("resize", initializeProgressElement)) : (resizeProgressBar(), $(document).on("scroll", resizeProgressBar), $(window).on("resize", resizeProgressBar)) } function getCurrentScrollPosition() { return $(window).scrollTop() } function initializeProgressElement() { let e = $("#navbar").outerHeight(!0); $("body").css({ "padding-top": e }), $("progress-container").css({ "padding-top": e }), progressBar.css({ top: e }), progressBar.attr({ max: getDistanceToScroll(), value: getCurrentScrollPosition() }) } function getDistanceToScroll() { return $(document).height() - $(window).height() } function resizeProgressBar() { progressBar.css({ width: getWidthPercentage() + "%" }) } function getWidthPercentage() { return getCurrentScrollPosition() / getDistanceToScroll() * 100 } const progressBar = $("#progress"); window.onload = function () { setTimeout(progressBarSetup, 50) };</script>
 </body>
